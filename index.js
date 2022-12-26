@@ -21,10 +21,11 @@ await app.register(import('@fastify/env'), {
     }
 });
 
-console.log(app.config)
-
 app.get('/', async () => {
-    return {hello: 'world'};
+    return {hello: 'openai API', endpoints: [
+        '/text?propmt=',
+        '/image?propmt='
+    ]};
 });
 
 app.register(import('./src/plugins/openai-api.js'));

@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-express-openapi-image",
+  "name": "nodejs-openapi-sample",
   "version": "1.0.0",
-  "description": "Generate images using OpenAI",
+  "description": "Generate text, images using OpenAI",
   "main": "index.js",
   "type": "module",
   "scripts": {
